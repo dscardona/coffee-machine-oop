@@ -14,4 +14,6 @@ while machine_is_on:
         machine_is_on = False
     elif choice == "report":
         coffee_machine.report()
-
+    else:
+        drink = menu.find_drink(choice)
+        coffee_machine.is_resource_sufficient(drink)
